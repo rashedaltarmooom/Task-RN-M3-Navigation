@@ -18,7 +18,7 @@ class cartStore {
     if (this.items.length === 0) {
       return 0;
     }
-    return this.items.reduce((total, item) => total + item.totalPrice, 0);
+    return this.items.reduce((total, item) => total + item.price, 0);
   }
 }
 

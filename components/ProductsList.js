@@ -4,11 +4,18 @@ import { FlatList, StyleSheet } from 'react-native';
 import productStore from '../stores/productStore.js';
 import { Product } from './Product.js';
 
-export function ProductsList() {
+export function ProductsList({ navigation }) {
   const products = productStore.getProducts();
 
   function renderProduct({ item: product }) {
-    return <Product product={product} onPress={() => {}} />;
+    return (
+      <Product
+        product={product}
+        onPress={() => {
+          navigation.navigate('ProductDetails', { id: product.id });
+        }}
+      />
+    );
   }
 
   return (
