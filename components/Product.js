@@ -2,9 +2,9 @@ import React from 'react';
 import { Text, Image, View, StyleSheet, TouchableOpacity } from 'react-native';
 import productStore from '../stores/productStore';
 
-export function Product({ product }) {
+export function Product({ product, onPress }) {
   return (
-    <TouchableOpacity style={styles.card} onPress={() => {}}>
+    <TouchableOpacity style={styles.card} onPress={onPress}>
       <Image style={styles.thumb} source={product.image} />
       <View style={styles.infoContainer}>
         <Text style={styles.name}>{product.name}</Text>
