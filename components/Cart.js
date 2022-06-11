@@ -15,10 +15,8 @@ export function Cart() {
   function renderItem({ item }) {
     return (
       <View style={styles.cartLine}>
-        <Text style={styles.lineLeft}>
-          {item.product.name} x {item.qty}
-        </Text>
-        <Text style={styles.lineRight}>$ {item.totalPrice}</Text>
+        <Text style={styles.lineLeft}>{item.name}</Text>
+        <Text style={styles.lineRight}>$ {item.price}</Text>
       </View>
     );
   }
