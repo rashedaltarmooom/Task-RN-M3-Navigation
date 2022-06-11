@@ -8,14 +8,12 @@ import { CartIcon } from '../CartIcon';
 const RootNavigator = () => {
   const { Navigator, Screen } = createStackNavigator();
   return (
-    <Navigator>
-      <Screen
-        name="ProductsList"
-        component={ProductsList}
-        options={{
-          headerRight: () => <CartIcon />,
-        }}
-      />
+    <Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Screen name="ProductsList" component={ProductsList} />
       <Screen
         name="ProductDetails"
         component={ProductDetail}
