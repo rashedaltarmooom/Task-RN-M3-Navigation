@@ -59,6 +59,10 @@ In your `RootNavigator`, customize your header.
     1. In your `ProductsList` component header, add a `Cart` button at the left side.
     2. Clicking on this button, navigate the user to the `Cart` screen.
 
-#### TabNavigator 🛒
+hint: [useNavigation hook](https://reactnavigation.org/docs/use-navigation/)
 
-    1. Create a bottom tab navigator with two screens, the root screen and the cart screen.
+#### DrawerNavigator 🛒
+
+Create a drawer with two screens, the root screen and the cart screen.
+
+[Docs](https://reactnavigation.org/docs/drawer-navigator/)
