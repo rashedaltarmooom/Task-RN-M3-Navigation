@@ -1,4 +1,4 @@
-import { makeAutoObservable, observable } from 'mobx';
+import { makeAutoObservable, observable } from "mobx";
 
 class cartStore {
   constructor() {
